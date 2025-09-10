@@ -152,19 +152,6 @@
     position: relative;
     font-weight: bold;
   }
-  #navigation #navbar-menu ul li a.active:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 0.42105263em;
-    background: var(--primary);
-    opacity: 1;
-    bottom: 0.26315789em;
-    border-radius: 0.21052632em;
-    left: -0.31578947em;
-    right: -0.31578947em;
-    z-index: -1;
-  }
   #navigation #navbar-menu.open {
     height: 19.125em;
     padding-top: 1.25em;
@@ -338,7 +325,7 @@
     height: 0.42105263em;
     background: var(--primary);
     opacity: 1;
-    bottom: 0.26315789em;
+    top: 2rem;
     border-radius: 0.21052632em;
     left: -0.31578947em;
     right: -0.31578947em;

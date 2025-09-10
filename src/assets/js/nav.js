@@ -21,6 +21,12 @@ hamburgerMenu.addEventListener('click', function () {
         hamburgerMenu.setAttribute("aria-expanded", false);
         hamburgerMenu.classList.remove("clicked");
         navbarMenu.classList.remove("open");
+        serviceMenu.setAttribute("aria-expanded", false);
+        serviceMenu.classList.remove("open");
+        if (screenWidth < 770) {
+            about.style.display = 'block'
+            contact.style.display = 'block'
+        }
     }
 });
 
