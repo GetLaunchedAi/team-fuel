@@ -31,10 +31,11 @@
         align-items: flex-start;
         position: relative;
         z-index: 10;
+        /* line-height: 3em; */
     }
-
     #sbs-1206 .cs-text {
         margin-bottom: 1rem;
+        line-height: 2em;
     }
     #sbs-1206 .cs-text:last-of-type {
         margin-bottom: 2rem;
@@ -190,8 +191,10 @@
     }
     #sbs-1206 .cs-picture img {
         width: 100%;
-        height: 100%;
+        height:100%;
         object-fit: contain;
+        border-radius: 10%;
+
     }
     #sbs-1206 .cs-graphic {
         width: 100%;
@@ -360,18 +363,19 @@
         width: 44.9375rem;
         left: -5.625rem;
     }
-    #sbs-1206 .cs-picture {
+    /* #sbs-1206 .cs-picture {
         width: 44.9375rem;
         height: 49.5625rem;
-    }
-    #sbs-1206 .cs-picture img {
+
+    } */
+    /* #sbs-1206 .cs-picture img {
         width: 100%;
         height: auto;
-        max-height: 49.5625rem;
         position: absolute;
         bottom: 0;
         left: 0;
-    }
+
+    } */
     #sbs-1206 .cs-graphic {
         width: 59.375rem;
         top: -6.25rem;
@@ -415,6 +419,7 @@
     align-items: center;
     gap: clamp(3rem, 6vw, 4rem);
   }
+
   #services-1329 .cs-content {
     width: 100%;
     display: flex;
@@ -718,7 +723,7 @@
   }
   #sbs-r .cs-text {
     font-size: var(--bodyFontSize);
-    line-height: 1.5em;
+    line-height: 2em;
     text-align: left;
     width: 100%;
     max-width: 46.875rem;

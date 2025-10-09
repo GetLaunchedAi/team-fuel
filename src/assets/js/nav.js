@@ -39,6 +39,7 @@ serviceMenu.addEventListener('click', function () {
             about.style.display = 'none'
             contact.style.display = 'none'
         }
+        console.log("ran")
 
 
     } else {
@@ -49,7 +50,7 @@ serviceMenu.addEventListener('click', function () {
             contact.style.display = 'block'
         }
 
-
+        console.log("ran")
 
     }
 });
