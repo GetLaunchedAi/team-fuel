@@ -18,7 +18,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">Contact Us</h1>
+  <h1 id="home-h" class="expand-in">Contact Us</h1>
   {% image './src/images/bannerimg.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px,
   1920px'%}
 </section>
@@ -27,7 +27,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="cs-contact-242">
-    <div class="cs-container reveal fx bg ">
+    <div class="cs-container">
         <div class="cs-content ">
             <span class="cs-topper">Here To Help</span>
             <h2 class="cs-title">Contact Us</h2>
@@ -36,7 +36,7 @@ eleventyNavigation:
             </p>
         </div>
         <!-- Form -->
-        <form id="cs-form-242" name="Contact Form" method="post">
+        <form id="cs-form-242" class="fx slide-top staggered-m" style="--i:0" name="Contact Form" method="post">
             <label class="cs-label">
                 Name
                 <input class="cs-input" required type="text" id="name-242" name="name" placeholder="John/Jane Doe">
@@ -62,7 +62,7 @@ eleventyNavigation:
         <!-- Contact Info -->
         <div class="cs-right-section">
             <ul class="cs-ul">
-                <li class="cs-li">
+                <li class="cs-li fx slide-top staggered-f" style="--i:1">
                     <picture class="cs-icon-wrapper">
                         <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg" alt="mail icon" class="cs-icon" width="36" height="36" decoding="async">
                     </picture>
@@ -71,7 +71,7 @@ eleventyNavigation:
                         <a href="mailto:downsconstructionllc@gmail.com" class="cs-link">downsconstructionllc@gmail.com</a>
                     </div>
                 </li>
-                <li class="cs-li">
+                <li class="cs-li fx slide-top staggered-f" style="--i:2">
                     <picture class="cs-icon-wrapper">
                         <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone.svg" alt="phone icon" class="cs-icon" width="36" height="36" decoding="async">
                     </picture>
@@ -80,7 +80,7 @@ eleventyNavigation:
                         <a href="tel:206-987-6543" class="cs-link">(269) 599-4913</a>
                     </div>
                 </li>
-                <li class="cs-li">
+                <li class="cs-li fx slide-top staggered-f" style="--i:3">
                     <picture class="cs-icon-wrapper">
                         <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg" alt="address icon" class="cs-icon" width="36" height="36" decoding="async">
                     </picture>
@@ -91,7 +91,7 @@ eleventyNavigation:
                 </li>
             </ul>
             <!-- Picture -->
-            <picture class="cs-picture">
+            <picture class="cs-picture fx slide-top staggered-f" style="--i:4">
                 <source media="(max-width: 600px)" srcset="/images/newleafmap.png">
                 <source media="(min-width: 601px)" srcset="/images/newleafmap.png">
                 <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="/images/newleafmap.png" alt="google map" width="462" height="438">
@@ -102,3 +102,10 @@ eleventyNavigation:
                                 
   </div>
 </section>
+<script>
+    const btn = document.querySelector('#cs-form-242');
+    btn.addEventListener('submit', e => {
+  const r = e.target.getBoundingClientRect();
+  confetti({ origin: { x: (r.left + r.width/2)/innerWidth, y: (r.top + r.height/2)/innerHeight } });
+});
+</script>

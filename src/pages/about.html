@@ -18,7 +18,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">About Us</h1>
+  <h1 id="home-h" class="expand-in">About Us</h1>
   {% image './src/images/bannerimg.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
 </section>
 
@@ -27,14 +27,14 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="sbs">
-  <div class="cs-container reveal fx bg">
+  <div class="cs-container">
     <!-- Left Image Section -->
-    <div class="cs-left">
+    <div class="cs-left fx slide-right staggered-m" style="--i:1">
       {% image './src/images/aboutimgwork.png', 'cabinets', 'cs-picture cs-picture1', 'lazy'%}
       <!-- {% image './src/images/aboutimg2a.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%} -->
     </div>
     <!-- Right Content Section-->
-    <div class="cs-right">
+    <div class="cs-right fx slide-left staggered-m" style="--i:2">
       <span class="cs-topper">About Us</span>
       <h2 class="cs-title">About New Leaf</h2>
       <p class="cs-text">

@@ -15,9 +15,9 @@ eleventyNavigation:
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-2042">
+<section id="hero-2042" >
     <div class="cs-container">
-        <div class="cs-content">
+        <div class="cs-content fx fade-in">
             <span class="cs-topper">Dental Care for Everyone</span>
             <h1 class="cs-title">We Provide Dental Services & Surgery</h1>
             <p class="cs-text">
@@ -47,7 +47,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="services-1329">
-    <div class="cs-container reveal fx bg">
+    <div class="cs-container fx slide-top">
         <div class="cs-content">
             <div class="cs-flex-group">
                 <span class="cs-topper">Our Services</span>
@@ -128,12 +128,12 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="sbs-1206">
-    <div class="cs-container reveal fx bg">
+    <div class="cs-container">
         <!-- Left Image Section -->
         <div class="cs-image-group">
             <!--To make your own PNG cropped people, use https://www.remove.bg/ to remove the background of any image-->
             <!--Main Image-->
-            <picture class="cs-picture">
+            <picture class="cs-picture fx slide-left">
                 <source media="(max-width: 600px)" srcset="/images/featuredimg2.png">
                 <source media="(min-width: 601px)" srcset="/images/featuredimg2.png">
                 <img loading="lazy" decoding="async" src="/images/featuredimg2.png" alt="person with box" aria-hidden="true">
@@ -143,7 +143,7 @@ eleventyNavigation:
             <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/swirl.svg" alt="graphic" width="950" height="950" aria-hidden="true">
         </div>
         <!-- Right Content Section-->
-        <div class="cs-content">
+        <div class="cs-content fx slide-right">
             <span class="cs-topper">About Us</span>
             <br/>
             <h2 class="cs-title">Always Ready to Invest in Any Business</h2>
@@ -171,12 +171,12 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="sbs-r">
-  <div class="cs-container reveal fx bg">
-    <div class="cs-left">
+  <div class="cs-container ">
+    <div class="cs-left fx slide-left">
       {% image './src/images/featuredimg2.png', 'residential construction project', 'cs-picture cs-picture1', 'lazy'%}
       {% image './src/images/featuredimg1.png', 'kitchen remodel', 'cs-picture cs-picture2', 'lazy'%}
     </div>
-    <div class="cs-right">
+    <div class="cs-right fx slide-right">
       <span class="cs-topper">Additional Services</span>
       <h2 class="cs-title">General Contracting, Windows, Fencing & More</h2>
       <p class="cs-text">
@@ -196,7 +196,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="reviews">
-  <div class="cs-container reveal fx bg">
+  <div class="cs-container fx slide-bottom staggered" style="--i:0">
     <span class="cs-topper">Our Reviews</span>
     <h2 class="cs-title">Words From Our Customers</h2>
     <p class="cs-text">
@@ -206,7 +206,7 @@ eleventyNavigation:
     </p>
     <ul class="cs-card-group">
       <!-- Review 1 -->
-      <li class="cs-item">
+      <li class="cs-item fx slide-bottom staggered" style="--i:1">
         <!-- <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
           src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png" alt="profile picture" width="80"
           height="80" /> -->
@@ -221,7 +221,7 @@ I've had this company to do a few different things around my home . The quality 
           src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16" />
       </li>
       <!-- Review 2 -->
-      <li class="cs-item">
+      <li class="cs-item fx slide-bottom staggered" style="--i:2">
         <!-- <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
           src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png" alt="profile picture" width="80"
           height="80" /> -->
@@ -237,7 +237,7 @@ I've had this company to do a few different things around my home . The quality 
           src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16" />
       </li>
     </ul>
-    <a aria-label="read more reviews" href="/reviews" class="button-solid">Read More</a>
+    <a aria-label="read more reviews" href="/reviews" class="button-solid fx slide-bottom staggered" style="--i:3">Read More</a>
   </div>
 </section>
 
