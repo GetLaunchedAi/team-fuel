@@ -1,0 +1,46 @@
+---
+layout: 'base.html'
+description: 'Answers to common questions about installs, warranty, scheduling, training, compliance, and support.'
+metaTitle: 'FAQs | Team Fuel'
+tagTitle: 'FAQs'
+title: 'FAQs'
+preloadImg: '/images/servicebanner.jpg'
+preloadCSS: '/css/services.css'
+permalink: 'faqs/'
+eleventyNavigation:
+  key: FAQs
+  order: 500
+---
+<section id="int-hero">
+  <h1 id="home-h" class="expand-in">FAQs</h1>
+  {% image './src/images/servicebanner.jpg', 'Team Fuel FAQs', '', 'lazy', '(max-width: 850px) 850px, 1920px' %}
+</section>
+
+<section id="faq-254">
+  <div class="cs-container fx fade-in">
+    <div class="cs-content">
+      <span class="cs-topper">Helpful Info</span>
+      <h2 class="cs-title">Frequently Asked Questions</h2>
+      <p class="cs-text">If you don’t see your question here, reach out—our team is happy to help.</p>
+    </div>
+    <div class="cs-flex-group">
+      <ul class="cs-faq-group">
+        <li class="cs-faq-item active"><button class="cs-button">How does the install process work?</button><p class="cs-item-p">We confirm scope, schedule your window, arrive on time, perform clean installs, validate devices, and provide documentation as needed.</p></li>
+        <li class="cs-faq-item"><button class="cs-button">What is your warranty?</button><p class="cs-item-p">We provide a 90-day installation warranty on labor. Device warranties are provided by the manufacturer.</p></li>
+        <li class="cs-faq-item"><button class="cs-button">How do I schedule?</button><p class="cs-item-p">Contact us with your timeline and locations. We coordinate single-day visits or phased rollouts across multiple sites.</p></li>
+        <li class="cs-faq-item"><button class="cs-button">Do you offer training?</button><p class="cs-item-p">Yes—live, virtual, or on-site training for drivers, admins, and technicians with simple SOPs and quick-start guides.</p></li>
+        <li class="cs-faq-item"><button class="cs-button">Can you help with compliance?</button><p class="cs-item-p">We configure retention, privacy, and reporting settings and provide documentation to support audits and policies.</p></li>
+        <li class="cs-faq-item"><button class="cs-button">What if a device fails after install?</button><p class="cs-item-p">We troubleshoot and, if needed, swap hardware under manufacturer RMA. Labor is covered under our 90-day install warranty.</p></li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+    for (const item of faqItems) {
+      const onClick = () => { item.classList.toggle('active') }
+      item.addEventListener('click', onClick)
+    }
+  </script>
+</section>
+
+

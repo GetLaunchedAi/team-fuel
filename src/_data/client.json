@@ -1,15 +1,30 @@
 {
-  "name": "Downs Construction LLC",
-  "email": "downsconstructionllc@gmail.com",
-  "phone": "269-599-4913",
-  "phoneFormatted": "(269)-599-4913",
+  "name": "Team Fuel",
+  "email": "Dispatch@teamfueldenver.com",
+  "phone": "720-429-7796",
+  "phoneFormatted": "(720) 429-7796",
   "address": {
     "lineOne": "First Address Line",
     "lineTwo": "Second Address Line, If Needed",
-    "city": "Battle Creek",
-    "county": "Mi",
+    "city": "Denver",
+    "county": "CO",
     "postcode": "80206",
     "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
   },
-  "domain": "www.website.com"
+  "domain": "www.teamfueldenver.com",
+  "businessHours": {
+    "monday": "7:00 AM – 6:00 PM",
+    "tuesday": "7:00 AM – 6:00 PM",
+    "wednesday": "7:00 AM – 6:00 PM",
+    "thursday": "7:00 AM – 6:00 PM",
+    "friday": "7:00 AM – 6:00 PM",
+    "saturday": "By appointment",
+    "sunday": "Closed"
+  },
+  "serviceAreas": [
+    "Denver Metro",
+    "Front Range",
+    "Statewide Colorado",
+    "Regional projects by request"
+  ]
 }
