@@ -517,10 +517,6 @@
     body.dark-mode #content-page-1402 p {
         color: var(--bodyTextColorWhite);
     }
-    body.dark-mode #content-page-1402 .cs-color,
-    body.dark-mode #content-page-1402 a {
-        color: var(--primaryLight);
-    }
     body.dark-mode #content-page-1402 p,
     body.dark-mode #content-page-1402 li {
         color: #ebebeb;
@@ -669,7 +665,6 @@
         /* 48px - 64px top & bottom */
         /* 40px - 56px left & right */
         padding: clamp(3rem, 4.9vw, 4rem) clamp(2.5rem, 4vw, 3.5rem);
-        background: var(--primaryLight);
         border-radius: 1rem;
         /* prevents padding from adding to width and height */
         box-sizing: border-box;
@@ -773,9 +768,6 @@
     body.dark-mode #faq-254 .cs-h3,
     body.dark-mode #faq-254 .cs-item-p {
         color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #faq-254 .cs-cta {
-        background: var(--medium);
     }
 }
 /*-- -------------------------- -->
