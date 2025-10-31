@@ -3,7 +3,7 @@ layout: "base.html"
 description: "Meta description for the page"
 metaTitle: "Downs Construction LLC"
 tagTitle: "Est. 1992"
-preloadImg: "/images/landing-1920w.webp"
+preloadImg: "/images/landing.png"
 preloadCSS: "/css/home.css"
 permalink: "/"
 eleventyNavigation:
@@ -158,9 +158,9 @@ eleventyNavigation:
         /> -->
       </li>
     </ul>
-    <div class="cs-content" style="text-align: center; margin-top: 2rem">
+    <!-- <div class="cs-content" style="text-align: center; margin-top: 2rem">
       <a href="/services" class="cs-button-solid">View All Services</a>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -172,14 +172,13 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-image-group">
-      <!-- Main Image of Team Fuel -->
       <picture class="cs-picture fx slide-left">
-        <source media="(max-width: 600px)" srcset="/images/team-fuel-mobile.png" />
-        <source media="(min-width: 601px)" srcset="/images/team-fuel.png" />
+        <source media="(max-width: 600px)" srcset="/images/about_img_1.png" />
+        <source media="(min-width: 601px)" srcset="/images/about_img_1.png" />
         <img
           loading="lazy"
           decoding="async"
-          src="/images/team-fuel.png"
+          src="/images/about_img_1.png"
           alt="Team Fuel - our expert fleet technology team"
           aria-hidden="true"
         />
@@ -230,28 +229,22 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="sbs-r">
+ 
   <div class="cs-container">
     <div class="cs-left fx slide-left">
-      {% image './src/images/featuredimg2.png', 'residential construction
-      project', 'cs-picture cs-picture1', 'lazy'%} {% image
-      './src/images/featuredimg1.png', 'kitchen remodel', 'cs-picture
-      cs-picture2', 'lazy'%}
+      {% image './src/images/featured_img_1.png', 'Team Fuel technician performing telematics installation', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/featured_img_2.png', 'Fleet vehicle electronic upgrades in progress', 'cs-picture cs-picture2', 'lazy'%}
     </div>
     <div class="cs-right fx slide-right">
-      <span class="cs-topper">Additional Services</span>
-      <h2 class="cs-title">General Contracting, Windows, Fencing & More</h2>
+      <span class="cs-topper">What We Do</span>
+      <h2 class="cs-title">On-Site Fleet Installations, Tech Support & More</h2>
       <p class="cs-text">
-        We offer a full range of services including general contracting, window
-        installation, bathroom and kitchen remodels, privacy fence construction,
-        concrete work, and fire restoration. Our expert team handles every
-        detail with precision.
+        Team Fuel specializes in mobile telematics installations, camera and sensor deployments, fleet electronics upgrades, system troubleshooting, and custom solutions for commercial vehicles. Every job is completed by certified, experienced field technicians who get it right the first time.
       </p>
       <p class="cs-text">
-        Whether you’re repairing after fire damage or upgrading for comfort and
-        style, we’re your trusted partner for residential construction and
-        renovation across Southwest Michigan.
+        Whether you need national fleet rollouts, single-vehicle installs, ongoing tech support, or project management for complex deployments, we're your trusted partner—on the road or at the job site.
       </p>
-      <a href="/services" class="button-solid">Explore All Services</a>
+      <a href="/services" class="cs-button-solid">Explore All Services</a>
     </div>
   </div>
 </section>
@@ -263,29 +256,19 @@ eleventyNavigation:
 <section id="reviews">
   <div class="cs-container fx slide-bottom staggered" style="--i: 0">
     <span class="cs-topper">Our Reviews</span>
-    <h2 class="cs-title">Words From Our Customers</h2>
+    <h2 class="cs-title">What Fleet Customers Say</h2>
     <p class="cs-text">
-      We take pride in delivering top-quality lakeshore and landscape
-      solutions—and our customers agree. From shoreline stabilization to custom
-      patios and seawalls, we’ve helped Michigan homeowners transform their
-      outdoor spaces with durable, beautiful results. Here’s what they have to
-      say about working with New Leaf Landscapes & Lakeshores.
+      From large national carriers to local service fleets, Team Fuel has earned the trust of fleet managers and owners across the country. Here’s what our clients say about our mobile install teams and customer support.
     </p>
     <ul class="cs-card-group">
       <!-- Review 1 -->
       <li class="cs-item fx slide-bottom staggered" style="--i: 1">
-        <!-- <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png" alt="profile picture" width="80"
-          height="80" /> -->
         <p class="cs-item-p">
-          I've had this company to do a few different things around my home .
-          The quality of work and the personal connection was amazing. Explained
-          things to me where I knew what was happening. All very polite and
-          genuine.
+          Team Fuel handled our entire rollout—hundreds of vehicles across multiple states. Their techs showed up on time, communicated clearly, and made sure every system was 100% operational before leaving the site.
         </p>
         <span class="cs-reviewer">
-          Heather B.
-          <span class="cs-desc">Homeowner</span>
+          Samantha D.
+          <span class="cs-desc">Fleet Manager, Regional Logistics</span>
         </span>
         <img
           class="cs-item-stars"
@@ -300,19 +283,12 @@ eleventyNavigation:
       </li>
       <!-- Review 2 -->
       <li class="cs-item fx slide-bottom staggered" style="--i: 2">
-        <!-- <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png" alt="profile picture" width="80"
-          height="80" /> -->
         <p class="cs-item-p">
-          I can't say enough good things about this company. I previously had
-          two contractors come in and needless to say they did not leave the job
-          properly done. I call Brian at down's construction and they got right
-          on it.
+          Best experience with any installation team! The techs were professional and fast, and their project manager made scheduling a breeze. Highly recommend for any fleet tech work.
         </p>
         <span class="cs-reviewer">
-          John S.
-
-          <span class="cs-desc">Homeowner</span>
+          Miguel R.
+          <span class="cs-desc">Operations Lead, Utility Fleet</span>
         </span>
         <img
           class="cs-item-stars"
@@ -329,7 +305,7 @@ eleventyNavigation:
     <a
       aria-label="read more reviews"
       href="/reviews"
-      class="button-solid fx slide-bottom staggered"
+      class="cs-button-solid fx slide-bottom staggered"
       style="--i: 3"
       >Read More</a
     >
@@ -338,15 +314,15 @@ eleventyNavigation:
 
 <section id="cta">
   <div class="container">
-    <h2 class="title">Let’s Build Something Great Together</h2>
+    <h2 class="title">Ready for Reliable Fleet Installs?</h2>
     <p>
-      Have a vision for your home or property? Contact us today to schedule your
-      free estimate and take the first step toward lasting quality.
+      Need a trusted partner for your next rollout or electronic system upgrade? Contact Team Fuel today for a quote or to schedule your fleet installation anywhere in the US.
     </p>
-    <a href="/contact" class="button-solid">Request a Free Estimate</a>
+    <a href="/contact" class="cs-button-solid">Request a Free Quote</a>
   </div>
-  {% image './src/images/finalhomeimg.jpg', 'home renovation project', '',
-  'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/final_home_img.png', 'fleet of vans', '', 'lazy', '(max-width: 400px) 400px, (max-width:
+  850px)
+  850px, 1920'%}
 </section>
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
