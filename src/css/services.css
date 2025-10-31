@@ -189,14 +189,15 @@
         font-size: 2rem;
         margin-top: 2rem;
     }
-    #content-page-1402 h3 {
+    #content-page-1402 h3,
+    #content-page-1402 h4 {
         font-size: 1.5rem;
         color: var(--primary);
     }
-    #content-page-1402 h4,
     #content-page-1402 h5,
     #content-page-1402 h6 {
         font-size: 1.25rem;
+        color: var(--headerColor);
     }
     #content-page-1402 .cs-button-solid {
         margin-bottom: 2rem;
@@ -581,6 +582,15 @@
         color: var(--headerColor);
         position: relative;
     }
+    #faq-254 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 32.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
 
     #faq-254 .cs-faq-group {
         padding: 0;
@@ -813,6 +823,7 @@
     }
     #services-563 .cs-text {
         margin-bottom: 1rem;
+        color: var(--bodyTextColor);
     }
     #services-563 .cs-text:last-of-type {
         margin-bottom: 2rem;
