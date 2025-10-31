@@ -16,10 +16,10 @@
   /* Background slider */
   #hero-2042{overflow:hidden;position:relative}
   #hero-2042 .bg-slider{position:absolute;inset:0;z-index:0}
-  #hero-2042 .bg-slider::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.45)}
-  #hero-2042 .bg-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.2s ease-in-out}
+  #hero-2042 .bg-slider::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.45);z-index:0}
+  #hero-2042 .bg-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.2s ease-in-out;z-index:-1}
   #hero-2042 .bg-slide.active{opacity:1}
-  #hero-2042 .cs-container{position:relative;z-index:1}
+  #hero-2042 .cs-container{position:relative;z-index:3}
   #hero-2042 .cs-content .cs-topper {
     color: var(--text-muted-inverted);
 
@@ -29,7 +29,7 @@
     max-width: 80rem;
     margin: auto;
     /* turned off pointer events on the container so the video stops when you click on the background as well */
-    pointer-events: none;
+    pointer-events: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,6 +46,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 4;
   }
   #hero-2042 .cs-title {
     /* 39px - 61px */
@@ -245,12 +247,15 @@
     box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
     grid-column: span 12;
     z-index: 1;
+    border-radius: 1rem;
   }
   #services-1329 .cs-item:hover .cs-picture::after {
     opacity: 1;
+    border-radius: 1rem;
   }
   #services-1329 .cs-item:hover .cs-picture img {
     transform: scale(1.2);
+    border-radius: 1rem;
   }
   #services-1329 .cs-item:hover .cs-h3 {
     color: var(--primary);
@@ -277,6 +282,7 @@
     justify-content: flex-end;
     position: relative;
     z-index: 1;
+    border-radius: 1rem;
   }
   #services-1329 .cs-link::after {
     /* hover overlay */
@@ -290,6 +296,7 @@
     z-index: -1;
     /* as we can't animate background gradients, we animate the change of opacity from 0 to 1 */
     transition: opacity 0.3s;
+    border-radius: 1rem;
   }
   #services-1329 .cs-number {
     /* 25px - 39px */
@@ -328,6 +335,7 @@
     top: 0;
     left: 0;
     z-index: -1;
+    border-radius: 1rem;
   }
   #services-1329 .cs-picture:before {
     /* background color overlay */
@@ -615,7 +623,7 @@
         width: 100%;
         height:100%;
         object-fit: contain;
-        border-radius: 10%;
+        border-radius: 1rem;
 
     }
     #sbs-1206 .cs-graphic {
@@ -770,7 +778,7 @@
         width: 50%;
         margin-top: auto;
         /* same exact clamp as the sectionPadding variable */
-        margin-bottom: calc(clamp(3.75rem, 7.82vw, 6.25rem) * -1);
+        /* margin-bottom: calc(clamp(3.75rem, 7.82vw, 6.25rem) * -1); */
         left: 0;
     }
     #sbs-1206 .cs-picture {
@@ -834,7 +842,7 @@
     position: relative;
   }
   #sbs-r .cs-picture {
-    border-radius: 1.5em;
+    border-radius: 1rem;
     /* clips img tag corners */
     overflow: hidden;
     position: absolute;
