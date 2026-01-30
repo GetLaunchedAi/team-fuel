@@ -1,6 +1,6 @@
 ---
 layout: 'base.html'
-description: 'Contact Team Fuel for fleet electronics installations, device sales, and support. Call (720) 429-7796 or email Dispatch@teamfueldenver.com. Serving Denver and nationwide.'
+description: 'Contact Team Fuel for fleet electronics installations, device sales, and support. Call (720) 429-7796 or email Dispatch@teamfueldenver.com. Serving Aurora and nationwide.'
 metaTitle: 'Contact Team Fuel | Fleet Electronics Experts'
 tagTitle: 'Contact Us'
 preloadImg: '/images/landing.png'
@@ -86,7 +86,7 @@ eleventyNavigation:
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Location</span>
-                        <a href="https://goo.gl/maps/UAQn4vuGDiwv7DV39" class="cs-link">Denver, CO</a>
+                        <a href="{{ client.address.mapLink }}" class="cs-link">{{ client.address.lineOne }}, {{ client.address.city }}, {{ client.address.county }} {{ client.address.postcode }}</a>
                     </div>
                 </li>
             </ul>
@@ -94,7 +94,7 @@ eleventyNavigation:
             <picture class="cs-picture fx slide-top staggered-f" style="--i:4">
                 <source media="(max-width: 600px)" srcset="/images/newleafmap.png">
                 <source media="(min-width: 601px)" srcset="/images/newleafmap.png">
-                <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="/images/newleafmap.png" alt="Team Fuel location map in Denver, Colorado" width="462" height="438">
+                <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="/images/newleafmap.png" alt="Team Fuel location map in Aurora, Colorado" width="462" height="438">
             </picture>
         </div>
     </div>

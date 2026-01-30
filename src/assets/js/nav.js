@@ -42,7 +42,7 @@ hamburgerMenu.addEventListener('click', function () {
 
 serviceMenu.addEventListener('click', function (e) {
     // For accessibility, only toggle dropdown and nav links on mobile
-    if (screenWidth < 770) {
+    if (screenWidth < 770 && e.target.classList.contains('dropdown-toggle')) {
         e.preventDefault(); // prevent link default behavior on mobile
     }
     const isServiceOpen = serviceMenu.classList.contains("open");

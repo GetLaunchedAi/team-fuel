@@ -4,12 +4,12 @@
   "phone": "720-429-7796",
   "phoneFormatted": "(720) 429-7796",
   "address": {
-    "lineOne": "First Address Line",
-    "lineTwo": "Second Address Line, If Needed",
-    "city": "Denver",
+    "lineOne": "254 N Quari",
+    "lineTwo": "",
+    "city": "Aurora",
     "county": "CO",
-    "postcode": "80206",
-    "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+    "postcode": "80011",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=254+N+Quari+Aurora+CO+80011"
   },
   "domain": "www.teamfueldenver.com",
   "businessHours": {
@@ -22,7 +22,7 @@
     "sunday": "Closed"
   },
   "serviceAreas": [
-    "Denver Metro",
+    "Aurora Metro",
     "Front Range",
     "Statewide Colorado",
     "Regional projects by request"

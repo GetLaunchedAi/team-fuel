@@ -5,7 +5,7 @@ metaTitle: 'Fleet Electronics Services | Team Fuel'
 tagTitle: 'Services'
 title: 'Services'
 preloadImg: '/images/landing.png'
-preloadCSS: '/css/home.css'
+preloadCSS: '/css/services.css'
 permalink: 'services/'
 eleventyNavigation:
   key: Services
@@ -17,56 +17,131 @@ eleventyNavigation:
 
 <div id="banner-1402">
     <div class="cs-container">
-        <span class="cs-int-title">Services</span>
-        <div class="cs-breadcrumbs">
-            <a href="/" class="cs-link">Home</a>
-            <a href="/services" class="cs-link cs-active">Services</a>
-        </div>
+        <span class="cs-int-title">Our Services</span>
     </div>
     <!--Background Image-->
     <picture class="cs-background">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-laughing.jpg">
+        <source media="(max-width: 600px)" srcset="/images/fleet_banner.png">
         <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-laughing.jpg">
-        <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-laughing.jpg" alt="Team Fuel fleet electronics services team" width="1280" height="568" aria-hidden="true">
+        <source media="(min-width: 601px)" srcset="/images/fleet_banner.png">
+        <img decoding="async" src="/images/fleet_banner.png" alt="Team Fuel fleet electronics services team" width="1280" height="568" aria-hidden="true">
     </picture>
 </div>
                                 
 
 <!-- ============================================ -->
-<!--                 Content Page                 -->
+<!--                Services Grid                 -->
 <!-- ============================================ -->
 
-<!-- ============================================ 
-    This Stitch is used for content heavy interior pages
-    that have no design or layout.  Often times these are 
-    content silos where you talk extensively about a topic
-    to educate your visitors and rank on Google for the 
-    content.  These are great for pages that have a TON
-    of content.  Design isn't important here, it's all 
-    about making the content accessible and easy to read.
-================================================= -->
-
-<section id="content-page-1402">
+<section id="services-grid">
     <div class="cs-container">
         <div class="cs-content">
-            <h1 class="cs-title">Telematics & Fleet Electronics <span class="cs-color">Services</span></h1>
-            <p>Ten focused services delivered with reliability, expertise, and partnership. Click to learn more.</p>
-            <ul>
-                <li><a href="/mobile-telematics-installations/">Mobile Telematics Installations</a> — On-site installs for GPS, cameras, sensors; 90-day install warranty.</li>
-                <li><a href="/fleet-electronics-solutions/">Fleet Electronics Solutions</a> — End-to-end planning, installs, and integrations.</li>
-                <li><a href="/consultative-solution-design/">Consultative Solution Design</a> — Solution-first scoping and standards.</li>
-                <li><a href="/device-sales/">Device Sales</a> — Vetted hardware and accessories with expert guidance.</li>
-                <li><a href="/system-upgrades-retrofits/">System Upgrades & Retrofits</a> — Modernize and standardize your fleet.</li>
-                <li><a href="/project-management/">Project Management</a> — Professional coordination for multi-site rollouts.</li>
-                <li><a href="/maintenance-support/">Maintenance & Support</a> — Troubleshooting, swap-outs, and preventive checks.</li>
-                <li><a href="/training-education/">Training & Education</a> — Hands-on training and SOPs.</li>
-                <li><a href="/compliance-services/">Compliance Services</a> — Configurations and documentation for audits.</li>
-                <li><a href="/specialized-installations/">Specialized Installations</a> — Complex vehicles and custom upfits.</li>
-            </ul>
+            <span class="cs-topper"></span>
+            <h2 class="cs-title">What We Specialize In</h2>
         </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/mobile-telematics-installations/" class="cs-link">
+                    <img class="cs-background" src="/images/mobile_1.png" alt="Mobile Telematics Installations" decoding="async">
+                    <div class="cs-overlay"></div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-h3">Mobile Telematics Installations</h3>
+                        <p class="cs-desc">Professional on-site installation of telematics devices, cameras, and sensors for all vehicle types—performed by certified, reliable technicians.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/fleet-electronics-solutions/" class="cs-link">
+                    <img class="cs-background" src="/images/fleet_1.png" alt="Fleet Electronics Solutions" decoding="async">
+                    <div class="cs-overlay"></div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-h3">Fleet Electronics Solutions</h3>
+                        <p class="cs-desc">End-to-end electronic systems integration—from GPS tracking and ELDs to in-cab communications—for fleets of any scale or configuration.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/consultative-solution-design/" class="cs-link">
+                    <img class="cs-background" src="/images/consultative_1.png" alt="Consultative Solution Design" decoding="async">
+                    <div class="cs-overlay"></div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-h3">Consultative Solution Design</h3>
+                        <p class="cs-desc">Expert consultation to plan, scope, and optimize fleet technology deployments—ensuring your investment aligns with workflow and compliance goals.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/device-sales/" class="cs-link">
+                    <img class="cs-background" src="/images/device_1.png" alt="Device Sales" decoding="async">
+                    <div class="cs-overlay"></div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-h3">Device Sales</h3>
+                        <p class="cs-desc">Vetted hardware and accessories with expert guidance to ensure you get the right tools for your fleet's specific needs.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/system-upgrades-retrofits/" class="cs-link">
+                    <img class="cs-background" src="/images/system_1.png" alt="System Upgrades & Retrofits" decoding="async">
+                    <div class="cs-overlay"></div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-h3">System Upgrades & Retrofits</h3>
+                        <p class="cs-desc">Modernize and standardize your fleet with the latest technology, ensuring compatibility and performance across all vehicles.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/project-management/" class="cs-link">
+                    <img class="cs-background" src="/images/project_1.png" alt="Project Management" decoding="async">
+                    <div class="cs-overlay"></div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-h3">Project Management</h3>
+                        <p class="cs-desc">Professional coordination for multi-site rollouts to ensure seamless execution, on-time delivery, and minimal downtime.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/maintenance-support/" class="cs-link">
+                    <img class="cs-background" src="/images/maintenance_1.png" alt="Maintenance & Support" decoding="async">
+                    <div class="cs-overlay"></div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-h3">Maintenance & Support</h3>
+                        <p class="cs-desc">Troubleshooting, swap-outs, and preventive checks to keep your fleet running smoothly and minimize operational disruptions.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/training-education/" class="cs-link">
+                    <img class="cs-background" src="/images/training_1.png" alt="Training & Education" decoding="async">
+                    <div class="cs-overlay"></div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-h3">Training & Education</h3>
+                        <p class="cs-desc">Hands-on training and standard operating procedures (SOPs) to empower your team and ensure proper system usage.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/compliance-services/" class="cs-link">
+                    <img class="cs-background" src="/images/compliance_1.png" alt="Compliance Services" decoding="async">
+                    <div class="cs-overlay"></div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-h3">Compliance Services</h3>
+                        <p class="cs-desc">Configurations and documentation for audits to ensure regulatory compliance and avoid costly penalties.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/specialized-installations/" class="cs-link">
+                    <img class="cs-background" src="/images/specialized_1.png" alt="Specialized Installations" decoding="async">
+                    <div class="cs-overlay"></div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-h3">Specialized Installations</h3>
+                        <p class="cs-desc">Complex vehicles and custom upfits tailored to your unique needs, handled by experts in specialized fleet requirements.</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
-    <div class="cs-bubbles" aria-hidden="true"></div>
 </section>
                                 
