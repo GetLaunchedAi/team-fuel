@@ -18,15 +18,59 @@ eleventyNavigation:
 
 <section id="content-page-1402">
   <div class="cs-container">
-    <div class="cs-content">
+    <div class="cs-content" style="max-width: 44rem; margin: 0 auto; align-items: center; text-align: center;">
       <h2 class="cs-title">Work With Us</h2>
-      <p>We’re growing a team built on reliability, craftsmanship, and partnership. If that sounds like you, we’d love to hear from you.</p>
-      <h3>Open Roles</h3>
-      <p><em>No current openings.</em></p>
-      <p><a href="mailto:Dispatch@teamfueldenver.com" class="cs-button-solid">General Application</a></p>
+      <p class="cs-text">We’re growing a team built on reliability, craftsmanship, and partnership. If that sounds like you, we’d love to hear from you.</p>
+      
+      <form id="careers-form" class="cs-form" name="Careers Application" method="post" action="https://submit-form.com/S8WvV3vA" enctype="multipart/form-data" style="text-align: left;">
+        <label class="cs-label">
+            Name
+            <input class="cs-input" required type="text" id="name" name="name" placeholder="John/Jane Doe">
+        </label>
+        <div class="cs-flex-row" style="display: flex; gap: 1.25rem; width: 100%;">
+            <label class="cs-label" style="flex: 1;">
+                Email
+                <input class="cs-input" required type="email" id="email" name="email" placeholder="name@company.com">
+            </label>
+            <label class="cs-label" style="flex: 1;">
+                Phone
+                <input class="cs-input" required type="tel" id="phone" name="phone" placeholder="+1 (206) 987-6543">
+            </label>
+        </div>
+        <label class="cs-label">
+            Attach Resume/CV (PDF or Word)
+            <input class="cs-input" type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required style="padding-top: 0.75rem;">
+        </label>
+        <label class="cs-label cs-label-message">
+            Tell us about your experience
+            <textarea class="cs-input cs-textarea" required name="experience" id="experience" placeholder="I have 5 years of experience in..."></textarea>
+        </label>
+        <button class="cs-button-solid cs-submit" type="submit">Submit Application</button>
+      </form>
+
+      <div class="cs-roles-section" style="margin-top: 4rem; width: 100%;">
+        <h3 style="margin-bottom: 1rem;">Open Roles</h3>
+        <p><em>No current openings.</em></p>
+      </div>
     </div>
   </div>
   <div class="cs-bubbles" aria-hidden="true"></div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+    const form = document.querySelector('#careers-form');
+    form.addEventListener('submit', e => {
+        const r = e.target.getBoundingClientRect();
+        confetti({ 
+            origin: { 
+                x: (r.left + r.width/2)/innerWidth, 
+                y: (r.top + r.height/2)/innerHeight 
+            },
+            particleCount: 150,
+            spread: 70
+        });
+    });
+</script>
 
 

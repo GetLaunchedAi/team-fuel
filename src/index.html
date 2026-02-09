@@ -215,12 +215,18 @@ eleventyNavigation:
           <li class="cs-li">Dedicated maintenance & support</li>
         </ul>
       </div>
-      <a
-        class="cs-button-solid"
-        aria-label="learn more about Team Fuel"
-        href="/about"
-        >Learn More</a
-      >
+      <div class="cs-button-wrapper">
+        <a
+          class="cs-button-solid"
+          aria-label="learn more about Team Fuel"
+          href="/about"
+          >Learn More</a
+        >
+        <div class="cs-trust-logos">
+          <img src="/images/colorado_company_icon.png" alt="Colorado USA Company" width="60" height="60" loading="lazy" decoding="async">
+          <img src="/images/colorado_startups_icon.webp" alt="Colorado Startups" width="60" height="60" loading="lazy" decoding="async">
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -249,9 +255,35 @@ eleventyNavigation:
   </div>
 </section>
 
-<!-- ============================================ -->
-<!--                   Reviews                    -->
-<!-- ============================================ -->
+    <!-- Portfolio Section -->
+    <section id="portfolio-home">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">Some of Our Work</h2>
+                <p class="cs-text">
+                    Take a look at some of our recent work. From telematics rollouts to specialized vehicle electronics, our certified technicians deliver quality results on every job.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    {% image './src/images/portfolio/port1.jpg', 'Team Fuel fleet electronics installation', 'cs-picture', 'lazy' %}
+                </li>
+                <li class="cs-item">
+                    {% image './src/images/portfolio/port2.jpg', 'GPS tracking device installation project', 'cs-picture', 'lazy' %}
+                </li>
+                <li class="cs-item">
+                    {% image './src/images/portfolio/port3.jpg', 'Mobile telematics installation case study', 'cs-picture', 'lazy' %}
+                </li>
+            </ul>
+            <div class="cs-button-wrapper">
+                <a href="/portfolio" class="cs-button-solid">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
 
 <section id="reviews">
   <div class="cs-container fx slide-bottom staggered" style="--i: 0">
@@ -264,11 +296,11 @@ eleventyNavigation:
       <!-- Review 1 -->
       <li class="cs-item fx slide-bottom staggered" style="--i: 1">
         <p class="cs-item-p">
-          Team Fuel handled our entire rollout—hundreds of vehicles across multiple states. Their techs showed up on time, communicated clearly, and made sure every system was 100% operational before leaving the site.
+          Christian and Angela are both so good at what they do. They treat people so well and care about what they do. Great communication and they make sure they get the job done right every time. I switched from another company that gave me nothing but problems and I'm so glad I did. Great rates, even better people. They will take care of you!
         </p>
         <span class="cs-reviewer">
-          Samantha D.
-          <span class="cs-desc">Fleet Manager, Regional Logistics</span>
+          travis ward
+          <span class="cs-desc">Customer</span>
         </span>
         <img
           class="cs-item-stars"
@@ -284,11 +316,11 @@ eleventyNavigation:
       <!-- Review 2 -->
       <li class="cs-item fx slide-bottom staggered" style="--i: 2">
         <p class="cs-item-p">
-          Best experience with any installation team! The techs were professional and fast, and their project manager made scheduling a breeze. Highly recommend for any fleet tech work.
+          Christian is exceptional! He was incredibly fast, efficient, and displayed outstanding professionalism throughout the entire process. His attention to detail and positive attitude truly set him apart. I highly recommend Christian and the Team Fuel crew for anyone in need of GPS or camera installation services. Thanks again, Christian!
         </p>
         <span class="cs-reviewer">
-          Miguel R.
-          <span class="cs-desc">Operations Lead, Utility Fleet</span>
+          Carl Schroedl
+          <span class="cs-desc">Customer</span>
         </span>
         <img
           class="cs-item-stars"

@@ -36,7 +36,7 @@ eleventyNavigation:
             </p>
         </div>
         <!-- Form -->
-        <form id="cs-form-242" class="fx slide-top staggered-m" style="--i:0" name="Contact Form" method="post">
+        <form id="cs-form-242" class="fx slide-top staggered-m" style="--i:0" name="Contact Form" method="post" action="https://submit-form.com/S8WvV3vA">
             <label class="cs-label">
                 Name
                 <input class="cs-input" required type="text" id="name-242" name="name" placeholder="John/Jane Doe">
@@ -84,17 +84,17 @@ eleventyNavigation:
                     <picture class="cs-icon-wrapper">
                         <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg" alt="address icon" class="cs-icon" width="36" height="36" decoding="async">
                     </picture>
-                    <div class="cs-flex-group">
-                        <span class="cs-header">Location</span>
-                        <a href="{{ client.address.mapLink }}" class="cs-link">{{ client.address.lineOne }}, {{ client.address.city }}, {{ client.address.county }} {{ client.address.postcode }}</a>
-                    </div>
-                </li>
-            </ul>
-            <!-- Picture -->
+            <div class="cs-flex-group">
+                <span class="cs-header">Location</span>
+                <a href="{{ client.address.mapLink }}" class="cs-link">{{ client.address.lineOne }}, {{ client.address.city }}, {{ client.address.county }} {{ client.address.postcode }}</a>
+            </div>
+        </li>
+    </ul>
+    <!-- Picture -->
             <picture class="cs-picture fx slide-top staggered-f" style="--i:4">
-                <source media="(max-width: 600px)" srcset="/images/newleafmap.png">
-                <source media="(min-width: 601px)" srcset="/images/newleafmap.png">
-                <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="/images/newleafmap.png" alt="Team Fuel location map in Aurora, Colorado" width="462" height="438">
+                <source media="(max-width: 600px)" srcset="/images/teamfuelmap.png">
+                <source media="(min-width: 601px)" srcset="/images/teamfuelmap.png">
+                <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="/images/teamfuelmap.png" alt="Team Fuel location map in Aurora, Colorado" width="462" height="438">
             </picture>
         </div>
     </div>

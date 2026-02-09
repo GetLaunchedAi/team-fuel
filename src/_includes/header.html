@@ -3,7 +3,14 @@
 <!-- ============================================ -->
 {% set navPages = collections.all | eleventyNavigation %}
 
-<div id="navigation">
+    <div id="promo-tab">
+        <div class="container">
+            <span class="promo-text">Click to Book an Estimate!</span>
+            <a href="tel:720-429-7796" class="promo-phone">(720) 429-7796</a>
+            <a href="/contact" class="promo-link">Book Now</a>
+        </div>
+    </div>
+    <div id="navigation">
     <div aria-hidden="true" class="background-color-div">
         <!--This div is used to overcome a z-index issue where the open
             #navbar-menu is on top of the #navigation. This bar places itself 
